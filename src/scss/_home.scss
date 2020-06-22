@@ -1,0 +1,114 @@
+.home {
+    &__name {
+        font-size: 30px;
+        font-weight: 700;
+        color: $color-green-light;
+        margin-bottom: 30px;
+    }
+
+    &__green-box {
+        width: 35vw;
+        height: 15vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 1% 99% 100% 0% / 0% 100% 0% 100%;
+        background-color: $color-green-light;
+    }
+
+    &__image-phone {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        transform: translateY(40%);
+        right: 10%;
+        width: 40%;
+    }
+
+    &__gp-button {
+        position: absolute;
+        max-width: 120px;
+        width: 33%;
+        bottom: 20%;
+        left: 5%;
+    }
+
+    @media (max-width: 420px) and (min-height: 700px) {
+        &__image-phone {
+            transform: translateY(15%);
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__gp-button {
+            max-width: none;
+            width: 200px;
+            bottom: 35%;
+        }
+    }
+
+    @media (min-width: 768px) and (min-height: 960px) {
+        &__image-phone {
+            transform: translateY(0%);
+            bottom: 5%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &__image-phone {
+            width: auto;
+            height: 70vh;
+            transform: translateY(0%) rotate(10deg);
+            bottom: 15%;
+            z-index: 1;
+        }
+
+        &__name {
+            font-size: 45px;
+            margin-top: 50px;
+        }
+
+        &__green-box {
+            width: 50vw;
+            height: 50vw;
+            border-radius: 30%;
+            left: auto;
+            bottom: auto;
+            right: -7%;
+            top: -25%;
+            transform: rotate(-40deg);
+        }
+
+        &__desc,
+        &__head {
+            max-width: 500px;
+        }
+
+        &__gp-button {
+            bottom: 20%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__gp-button {
+            left: 10%;
+            bottom: 35%;
+        }
+
+        &__image-phone {
+            right: 15%;
+        }
+
+        &__desc {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &__image-phone {
+            right: 20%;
+        }
+    }
+}

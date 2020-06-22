@@ -1,0 +1,44 @@
+.content {
+    padding: 5vh 7vw;
+    overflow: hidden;
+
+    &__head {
+        font-weight: 600;
+        color: $color-black;
+        margin-bottom: 15px;
+        max-width: 550px;
+        text-transform: capitalize;
+
+        &::first-letter {
+            color: $color-green-light;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+    @media(min-width:1024px) {
+        &__head {
+            font-size: 30px;
+        }
+    }
+
+    @media(min-width:1024px) {
+        &__head {
+            font-size: 35px;
+        }
+    }
+
+    @media(min-width:1200px) {
+        padding: 8vh 10vw;
+
+        &__desc {
+            line-height: 1.5;
+            font-size: 17px;
+        }
+
+
+    }
+}

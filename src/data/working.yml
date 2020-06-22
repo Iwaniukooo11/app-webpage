@@ -1,0 +1,9 @@
+# - [1,Wybierz składniki, które posiadasz]
+# - Zobacz dostępne przepisy
+# - Ciesz się jedzeniem!
+- index: 1
+  text: Wybierz składniki, które posiadasz
+- index: 2
+  text: Zobacz dostępne przepisy
+- index: 3
+  text: Ciesz się jedzeniem!

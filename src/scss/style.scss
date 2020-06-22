@@ -1,0 +1,51 @@
+@import './variables';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.violet {
+    color: $color-violet;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: $color-grey;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid $color-green-light;
+
+}
+
+@import './content';
+@import './working';
+@import './home';
+@import './authors';

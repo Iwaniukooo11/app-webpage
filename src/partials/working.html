@@ -1,0 +1,15 @@
+<section class="section">
+    <div class="content working">
+        <h2 class="content__head working__head">jak to działa?</h2>
+        <ul class="working__list">
+            {{#each working}}
+            <li class='working__list-element'>
+                <span class="working__index"> {{this.index}}</span>
+                <p class="working__desc">{{this.text}}</p>
+            </li>
+            {{/each}}
+        </ul>
+        <img class='working__image' src="assets/phone-working/phone.svg" alt="Zdjęcie Pani przy telefonie mobilnym">
+        <div class="working__green-box"></div>
+    </div>
+</section>

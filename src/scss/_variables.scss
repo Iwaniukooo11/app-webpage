@@ -1,0 +1,31 @@
+$color-green-light: #1DD1A1;
+$color-green-dark: #1AC396;
+// $color-grey: #D0D0D0;
+$color-grey: #D0D0D0;
+$color-black: #353B48;
+$color-violet: #FF0099;
+$color-white: #fff;
+
+@mixin makeSquare($a) {
+    width: $a;
+    height: $a;
+    line-height: #{$a/2};
+}
+
+@mixin longBoxShadow($colour, $length, $box) {
+    $value: ();
+
+    @for $i from 1 through $length {
+        $px: $i + px;
+        $shadow: $px $px $colour;
+        $value: append($value, $shadow, comma)
+    }
+
+    @if $box {
+        box-shadow: $value;
+    }
+
+    @else {
+        text-shadow: $value;
+    }
+}

@@ -1,0 +1,118 @@
+.working {
+    &__index {
+        font-weight: 600;
+        padding: 10px
+    }
+
+    &__index {
+        display: block;
+        font-size: 22px;
+        @include makeSquare(40px);
+        text-align: center;
+        color: $color-white;
+        background-color: $color-green-light;
+        border-radius: 50%;
+        margin-right: 15px;
+        // box-shadow: 4px 4px 0 0 $color-green-dark;
+        overflow: hidden;
+        @include longBoxShadow($color-green-dark, 30, false);
+    }
+
+    &__list {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    &__list-element {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__image {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 5%;
+        height: 240px;
+        max-height: 620px;
+    }
+
+    &__green-box {
+        display: none;
+    }
+
+    @media(min-height:700px) {
+        &__list {
+            margin-top: 30px;
+        }
+    }
+
+    @media(min-height:750px) and (orientation: landscape) {
+        &__image {
+            height: 65%;
+            left: auto;
+            right: 15%;
+            transform: none;
+        }
+    }
+
+    @media(min-width:768px) and (orientation: portrait) {
+        &__image {
+            height: auto;
+            width: 75%;
+        }
+    }
+
+    @media(min-width:768px) and (orientation: portrait) {
+        &__image {
+            bottom: 10%;
+        }
+    }
+
+    @media(min-width:960px) {
+        &__head {
+            margin-top: 60px;
+            font-size: 40px;
+        }
+
+    }
+
+    @media(min-width:1200px) {
+        padding-left: 20vw;
+
+        &__index {
+            @include makeSquare(60px);
+            // box-shadow: 6px 6px 0 0 $color-green-dark;
+
+            font-size: 30px;
+            line-height: 40px;
+            margin-right: 25px;
+        }
+
+        &__desc {
+            font-size: 22px;
+        }
+
+        &__list {
+            margin-top: 60px;
+        }
+
+
+    }
+
+    @media(min-width:1400px) {
+        &__green-box {
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+            width: 25%;
+            height: 250px;
+            background-color: $color-green-light;
+            z-index: -1;
+        }
+    }
+
+}
