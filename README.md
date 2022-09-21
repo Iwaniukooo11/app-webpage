@@ -4,7 +4,10 @@
 Promotional website of "Co by dziś zjeść" APP
 
 [My mobile app frontend](https://github.com/Iwaniukooo11/co-by-dzis-zjesc-app)
+<br>
 [My mobile app backend](https://github.com/Iwaniukooo11/co-by-dzis-zjesc-api)
+<br>
+[Live demo of website](https://iwaniukooo11.github.io/app-webpage/)
 
 Used technologies:
  - scss
