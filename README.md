@@ -9,7 +9,7 @@ Promotional website of "Co by dziś zjeść" APP
 <br>
 [Live demo of website](https://iwaniukooo11.github.io/app-webpage/)
 <br>
-[promotional video on YouTube](https://www.youtube.com/watch?v=sEZgtG3A0Uk)
+[Promotional video on YouTube](https://www.youtube.com/watch?v=sEZgtG3A0Uk)
 
 Used technologies:
  - scss
