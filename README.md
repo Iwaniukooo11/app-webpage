@@ -8,6 +8,8 @@ Promotional website of "Co by dziś zjeść" APP
 [My mobile app backend](https://github.com/Iwaniukooo11/co-by-dzis-zjesc-api)
 <br>
 [Live demo of website](https://iwaniukooo11.github.io/app-webpage/)
+<br>
+[promotional video on YouTube](https://www.youtube.com/watch?v=sEZgtG3A0Uk)
 
 Used technologies:
  - scss
